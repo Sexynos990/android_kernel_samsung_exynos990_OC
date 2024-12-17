@@ -3,7 +3,6 @@
 # Get additional build flags from command line arguments
 BUILD_FLAGS="$@"
 
-# Find all extreme configs and extract device names
 for device in $(find . -iname "*extreme_*" | sed -E 's/.*extreme_([^_]*)(_defconfig|defconfig).*/\1/'); do
     echo "Building for device: $device"
     ./build.sh -m "$device" $BUILD_FLAGS
@@ -16,3 +15,7 @@ for device in $(find . -iname "*extreme_*" | sed -E 's/.*extreme_([^_]*)(_defcon
 done
 
 echo "All builds completed successfully"
+echo "Sym linking"
+mkdir -p build/out/all/zip && \
+find build/out -iname "*zip" -type f -exec ln -sf $(realpath --relative-to=build/out/all/zip {}) build/out/all/zip/ \;
+
