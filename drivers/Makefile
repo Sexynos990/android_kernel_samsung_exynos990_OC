@@ -232,4 +232,5 @@ obj-y				+= kunit/
 obj-$(CONFIG_SPU_VERIFY) += spu_verify/
 
 # KernelSU
+
 obj-$(CONFIG_KSU) += kernelsu/

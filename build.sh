@@ -77,7 +77,7 @@ fi
 # Else it'll lose allowlist on reboot
 # Source patch: https://github.com/Unb0rn/android_kernel_samsung_exynos9820/commit/e424dac6ce3f99e128aaabb0711d69adf4079c77
 pushd ./KernelSU > /dev/null
-patch -p1 -t -N  < ../build/KSU.patch > /dev/null
+#patch -p1 -t -N  < ../build/KSU.patch > /dev/null
 popd > /dev/null
 
 if [[ "$CCACHE_OPTION" == "y" ]]; then
