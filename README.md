@@ -65,11 +65,15 @@ https://source.android.com/docs/setup/start/requirements
 
 2. Properly clone repository with submodules (KernelSU and toolchains)
 
-```git clone --recurse-submodules https://github.com/ExtremeXT/android_kernel_samsung_exynos990.git```
+```git clone --recurse-submodules https://github.com/Sexynos990/android_kernel_samsung_exynos990_OC.git```
 
 3. Build for your device without CCache and with KSU
 
 ```./build.sh -m x1slte -k y -c n```
+
+3. Build for all devices with KSU
+
+```./build_all.sh```
 
 4. Fetch the flashable zip of the kernel that was just compiled
 
