@@ -30,6 +30,7 @@
 - Easy to modify and compile for developers
 - Optimized for a balance between performance, battery life and low thermals
 - Fully open source with a clean commit history
+- now with Overclocked cpu from https://github.com/Sexynos990 
 
 ## Supported devices:
 
@@ -65,13 +66,13 @@ https://source.android.com/docs/setup/start/requirements
 
 2. Properly clone repository with submodules (KernelSU and toolchains)
 
-```git clone --recurse-submodules https://github.com/Sexynos990/android_kernel_samsung_exynos990_OC.git```
+```git clone --recurse-submodules https://github.com/Luphaestus/android_kernel_samsung_exynos990.git```
 
 3. Build for your device without CCache and with KSU
 
 ```./build.sh -m x1slte -k y -c n```
 
-3. Build for all devices with KSU
+3. Build for all devices with or without KSU
 
 ```./build_all.sh```
 
