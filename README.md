@@ -1,4 +1,8 @@
-# ExtremeKernel for Exynos 990 devices
+# VulcanKernel for Exynos 990 devices
+
+## Credits
+- Special thanks to [ExtremeXT](https://github.com/ExtremeXT) for the original ExtremeKernel source code and development
+- This kernel is based on [ExtremeKernel](https://github.com/ExtremeXT/android_kernel_samsung_exynos990) with modifications and improvements
 
 ## Features
 
@@ -78,7 +82,7 @@ https://source.android.com/docs/setup/start/requirements
 
 4. Fetch the flashable zip of the kernel that was just compiled
 
-```build/out/[your_device]/ExtremeKernel...zip```
+```build/out/[your_device]/VulcanKernel...zip```
 
 5. Flash it using a supported recovery like TWRP or PBRP (AOSP recovery does not work)
 

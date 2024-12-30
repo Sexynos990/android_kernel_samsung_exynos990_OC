@@ -3,6 +3,8 @@
 # Get additional build flags from command line arguments
 BUILD_FLAGS="$@"
 
+rm -rf build/out/all/
+
 for device in $(find . -iname "*extreme_*" | sed -E 's/.*extreme_([^_]*)(_defconfig|defconfig).*/\1/'); do
     echo "Building for device: $device"
     ./build.sh -m "$device" $BUILD_FLAGS
